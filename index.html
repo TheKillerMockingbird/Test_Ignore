@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<br>
+<br>
+<br>
+    <div class="clock-container">
+        <div id="clock"></div>
+    </div>
+
+    <div class="punch">
+        <h1>Keep track of your punches</h1>
+        <div class="button-container">
+            <button id="punchInButton">Punch In</button>
+            <button id="punchOutButton">Punch Out</button>
+        </div>
+
+        <h2>Missed Punch</h2>
+        <div class="missed-punch-container">
+            <input type="datetime-local" id="missedPunchTime">
+            <select id="missedPunchType">
+                <option value="Missed Punch In">Missed Punch In</option>
+                <option value="Missed Punch Out">Missed Punch Out</option>
+            </select>
+            <button id="missedPunchButton">Submit Missed Punch</button>    
+        </div>
+        <h2>Punch History</h2>
+        <ul id="punchHistory"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
